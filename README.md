@@ -16,12 +16,9 @@ let query = MyQuery(hello: "world™", tags: ["foo", "bar"], flag: true)
 
 let result = try encoder.encode(query)
 
-print(result) // hello=world&tags=foo&tags=bar&flag
+print(result) // hello=world%E2%84%A2&tags=foo&tags=bar&flag
 ```
 
 TODO
  - [x] Encoder
  - [ ] Decoder
-
-```
-
